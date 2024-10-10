@@ -1,5 +1,13 @@
-# Render Engine Setup
-We have a dedicated visualization tool for you to see our wavelet rendering on our test scenes. The engine is located in /RenderEngine.
+# Neural Free-Viewpoint Relighting for Glossy Indirect Illumination Real Time Demo
+![pipeline_image](./neural_wavelet_prt_pipeline.png)
+<div style="text-align: center;">
+  [<a href="https://arxiv.org/abs/2307.06335">Paper Link</a>]
+</div>
+
+### Quick summary of the paper
+We developed a neural representation for indirect illumination in synthetic scenes using wavelets. This allows the renderer to query the neural representation directly, bypassing the need for expensive path tracing to compute indirect lighting.
+
+We also provide a dedicated visualization tool where you can compare our wavelet-based rendering with standard ray tracing and traditional Spherical Harmonics-based Precomputed Radiance Transfer (PRT) across our test scenes.
 
 ## Overview
 This engine is designed to include all necessary source files required for operation. It primarily supports Windows but is compatible with Linux systems as well.
@@ -45,7 +53,7 @@ PathTracer -v -m nert_public\EnvmapStatic -n 2169_120 nert_public\scenes\kitchen
 
 PathTracer -v -m nert_public\EnvmapRotation\2124 nert_public\scenes\kitchen\scene.pbrt
 ```
-### Testing Wavelet PRT in an Interactive Window
+### Testing Wavelet PRT (Ours) in an Interactive Window
 **Examples:**
 ```bash
 PathTracer -v -m nert_public\EnvmapStatic -n 2169_120 -w nert_public\Weights\rnith-kitchen-final nert_public\scenes\kitchen\scene.pbrt 
@@ -56,6 +64,8 @@ PathTracer -v -m nert_public\EnvmapStatic -n 2169_120 -w nert_public\Weights\rni
 
 PathTracer -v -m nert_public\EnvmapRotation\2148 -w nert_public\Weights\rnith-kitchen-final nert_public\scenes\kitchen\scene.pbrt 
 ```
+To switch between our technique and traditional rendering, press `l`.
+
 ### Rendering with Indirect Spherical Harmonics (SH)
 Note: Only scene `four_animals_cook` supports SH and environment map `2169` supports rotation environment maps.
 
