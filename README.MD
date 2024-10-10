@@ -7,10 +7,8 @@
 ### Quick summary of the paper
 We developed a neural representation for indirect illumination in synthetic scenes using wavelets. This allows the renderer to query the neural representation directly, bypassing the need for expensive path tracing to compute indirect lighting.
 
-We also provide a dedicated visualization tool where you can compare our wavelet-based rendering with standard ray tracing and traditional Spherical Harmonics-based Precomputed Radiance Transfer (PRT) across our test scenes.
-
 ## Overview
-This engine is designed to include all necessary source files required for operation. It primarily supports Windows but is compatible with Linux systems as well.
+We also provide a dedicated visualization tool to compare our wavelet-based rendering with standard ray tracing and traditional Spherical Harmonics-based Precomputed Radiance Transfer (PRT) across our test scenes. You can find the binaries compiled on Windows 11 and Ubuntu 24 in the Release and skip the Dependencies and Building sections. If these binaries do not work for you, you can build yourself. This repo is designed to include all necessary source files required for operation. It primarily supports Windows but is compatible with Linux systems as well. 
 
 ## Dependencies
 Ensure the following dependencies are installed and properly configured. Other Cuda or Optix versions might work, but they have not been tested.
