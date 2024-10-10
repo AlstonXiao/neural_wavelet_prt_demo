@@ -32,7 +32,7 @@ cmake -DOptiX_ROOT_DIR=/path/to/your/optix ..
 Double click `nertRenderer.sln` in your build folder and it will launch VS 2022. Click `Build/Build Solution` in the menu bar. The build will take couple minutes and you will find the executable in `\bin\Debug\PathTracer.exe`
 
 ### Linux
-Run `make` in your build folder and you will find the executable in `\bin\Debug\PathTracer`
+Run `make` in your build folder and you will find the executable in `\bin\PathTracer`
 
 ## Getting Started
 
