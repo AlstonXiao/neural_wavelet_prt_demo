@@ -1,0 +1,9 @@
+[submodule "tiny-cuda-nn"]
+	path = tiny-cuda-nn
+	url = https://github.com/NVlabs/tiny-cuda-nn.git
+[submodule "common/otk-shader-util"]
+	path = common/otk-shader-util
+	url = https://github.com/nvidIA/otk-shader-util.git
+[submodule "common/otk-cmake"]
+	path = common/otk-cmake
+	url = https://github.com/nvidIA/otk-cmake.git
