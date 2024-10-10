@@ -8,9 +8,10 @@ This engine is designed to include all necessary source files required for opera
 Ensure the following dependencies are installed and properly configured. Other Cuda or Optix versions might work, but they have not been tested.
 - Git Submodules (included in this repo)
 - glfw3 `sudo apt-get install libglfw3-dev`
-- CUDA 12.1
+- CUDA 12.4 (Anything lower will not work)
 - Optix 7.6
 
+## Building 
 ### Configuring CMake
 This project is built using Cmake. During CMake configuration, set the `OptiX_ROOT_DIR` to point to the root folder of your Optix installation.
 ```bash
@@ -18,6 +19,13 @@ mkdir build
 cd  build
 cmake -DOptiX_ROOT_DIR=/path/to/your/optix ..
 ```
+
+### Windows
+Double click `nertRenderer.sln` in your build folder and it will launch VS 2022. Click `Build/Build Solution` in the menu bar. The build will take couple minutes and you will find the executable in `\bin\Debug\PathTracer.exe`
+
+### Linux
+Run `make` in your build folder and you will find the executable in `\bin\Debug\PathTracer`
+
 ## Getting Started
 
 ### Downloading Data
