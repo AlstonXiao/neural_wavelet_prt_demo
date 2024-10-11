@@ -1,7 +1,7 @@
 # Neural Free-Viewpoint Relighting for Glossy Indirect Illumination Real Time Demo
 ![pipeline_image](./neural_wavelet_prt_pipeline.png)
 <div style="text-align: center;">
-  [<a href="https://arxiv.org/abs/2307.06335">Paper Link</a>]
+  [<a href="https://arxiv.org/abs/2307.06335">Paper Link</a>] [<a href="https://cseweb.ucsd.edu/~viscomp/projects/EGSR23NeRT/">Project Link</a>]
 </div>
 
 ### Quick summary of the paper
